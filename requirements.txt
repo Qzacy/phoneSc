@@ -1,6 +1,2 @@
 phonenumbers
-subprocess
 requests
-json
-time
-sys
