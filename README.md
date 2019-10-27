@@ -7,7 +7,6 @@ Python3 tool which scans the phone number using "phonenumbers" lib and numverify
 - $ ```pip3 install -r requirements.txt```
 
 **numverify**:
-
 (Free API = 250 REQUESTS | [NumVerify](http://numverify.com))
 
 - Open the file "phoneSc.py" using your text editor:
