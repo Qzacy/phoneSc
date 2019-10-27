@@ -2,7 +2,7 @@
 Python3 tool which scans the phone number using "phonenumbers" lib and numverify.com API.
 
 ### Installation
-- Local Scan:
+-Local Scan:
 
 $ pip3 install -r requirements.txt
 
