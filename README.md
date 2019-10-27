@@ -13,6 +13,6 @@ Python3 tool which scans the phone number using "phonenumbers" lib and numverify
 
 ![File](/screenshots/nvinstallation.png)
 
-- Find the "api_key = '' " string and type your api key:
+- Find the "api_key = ' ' " string and type your api key:
 
 ![API Variable](/screenshots/nvapi.png)
