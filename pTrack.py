@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/bin/python3
 #by Qzacy
 
 import phonenumbers
@@ -57,7 +57,7 @@ def nverifyScan(uNumber):
     subprocess.call('clear')
     print('Running NumVerify API scan...')
     time.sleep(1.5)
-    api_key = 'c38f91a73c7dd62c48e85a1ec54479bc'
+    api_key = ''
     r = requests.get('http://apilayer.net/api/validate?access_key=' + api_key + '&number=' + uNumber)
     resp = r.json()
     print('International format: ' + resp['international_format'])
@@ -72,7 +72,7 @@ def nverifyScan(uNumber):
 
 if __name__ == '__main__':
     subprocess.call('clear')
-    print ('Welcome to pTrack, coded by Qzacy.')
+    print ('Welcome to phoneSc, coded by Qzacy.')
     uNumber = input('Enter the phone number without "+": ')
     subprocess.call('clear')
     print ('Select the scan method for', uNumber, ':\n[1] LocalScan\n[2] NumVerify')
