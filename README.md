@@ -1,5 +1,5 @@
 # phoneSc
-Python3 tool which scans the phone number using "phonenumbers" lib and numverify.com API.
+Python3 tool which scans the phone number using "phonenumbers" lib and [numverify](https://numverify.com) API.
 
 ### Installation
 **Local Scan**:
