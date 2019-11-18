@@ -76,7 +76,7 @@ if __name__ == '__main__':
     uNumber = input('Enter the phone number without "+": ')
     subprocess.call('clear')
     print ('Select the scan method for', uNumber, ':\n[1] LocalScan\n[2] NumVerify')
-    scanSel = input('pTrack > ')
+    scanSel = input('pSc > ')
     if scanSel == '1':
         lscan(uNumber)
     elif scanSel == '2':
