@@ -21,6 +21,7 @@ Check [Installation](#Installation) to install all of them:
 - Run the file:
 
 ```$ python3 psc.py [+1 (000) 000 0000]``` (Enter the complete prefix)
+
 ![banner](/screenshots/banner.png)
 - Add [NumVerify](numverify.com) API:
 
