@@ -1,4 +1,4 @@
-# phoneSc
+# phoneSc - by Qzacy
 Phone numbers scanner.
 
 ### Requirements
