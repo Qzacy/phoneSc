@@ -2,7 +2,9 @@
 Phone numbers scanner.
 
 ### Requirements
+Check [Installation](#Installation) to install all of them:
 - phonenumbers
+- requests
 - NumVerify API
 - Veriphone API
 
