@@ -3,8 +3,8 @@ Phone numbers scanner.
 
 ### Requirements
 - phonenumbers
--- NumVerify API
---
+- NumVerify API
+- Veriphone API
 
 ### Installation
 - ```$ git clone https://github.com/Qzacy/phoneSc.git```
