@@ -23,7 +23,7 @@ Check [Installation](#Installation) to install all of them:
 ```$ python3 psc.py [+1 (000) 000 0000]``` (Enter the complete prefix)
 
 ![banner](/screenshots/banner.png)
-- Add ![NumVerify](http://numverify.com) API:
+- Add [NumVerify](http://numverify.com) API:
 
 ```pSc #> add nv```
 ```Enter your key: [key]``` (If you sign up with the free plan you will get 250 requests.)
