@@ -5,13 +5,16 @@ from phonenumbers import timezone
 import sys
 import os
 import requests
+import urllib
 import json
 from time import sleep
 
 cdir = os.path.dirname(os.path.realpath(__file__))
+vf = open(cdir + "/setup/v", "r")
+vf = vf.readline()
 banner = """
  __i
-|---| phoneSc      v0.0.2
+|---| phoneSc      v""" + vf + """
 |[_]| The phone numbers',   
 |:::| scanner.   
 |:::|    
@@ -32,8 +35,10 @@ add [nv|verp]            Add an API
 check                    Check all the apis.
 
 >>> Misc
+update
 clear
 restart
+banner
 credits
 """
 
@@ -73,6 +78,11 @@ def trm():
             os.system("python3 " + cdir + "/psc.py " + unumber)
         elif cmd == "exit":
             sys.exit()
+        elif cmd == "update":
+            update()
+        elif cmd == "banner":
+            print(banner)
+            trm
         elif cmd == "credits":
             print("Coded by Qzacy.\nAPIs used: Numverify, Veriphone.\n\nContacts:\nGithub: https://github.com/Qzacy\nMail: qzacycoder@protonmail.com")
             trm()        
@@ -90,7 +100,21 @@ def trm():
         sleep(0.5)
         os.system("clear")
         os.system("python3 " + cdir + "/psc.py " + unumber)
+
+def update():
+    version = urllib.request.urlopen("https://raw.githubusercontent.com/Qzacy/phoneSc/master/setup/v")
+    currv = open(cdir + "/setup/v", "r")
+    cv = currv.readline()
+    lv = str(version.read())
+    lv = ''.join([char for char in lv if char not in "b'\\n"])
+    if cv == lv:
+        print(cv + " - You are currently using the last version.")
+        trm()
+    else:
+        print(lv + " - New version available:\nhttps://github.com/Qzacy/phoneSc")
+        trm()
     
+
 def add(name):
     if name == "numv":
         f = cdir + "/setup/nvapi.txt" 
@@ -269,7 +293,7 @@ def verpscan(unumber):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("\nUsage: python3 psc.py [phonenumber]")
+        print("\nUsage: python3 psc.py [+1 (000) 000 0000]")
         sys.exit()
     unumber = sys.argv[1]
     if  not unumber.startswith("+"):
@@ -283,6 +307,3 @@ if __name__ == "__main__":
     os.system("clear")
     print(banner)
     trm()
-    
-    
-
