@@ -32,6 +32,7 @@ Check [Installation](#Installation) to install all of them:
 ```pSc #> add verp```
 ```Enter your key: [key]``` (If you sign up with the free plan you will get 1000 requests.)
 - Check APIs servers:
+
 ```pSc #> check```
 
 ```pSc #> help``` (Shows all commands.)
