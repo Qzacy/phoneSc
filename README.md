@@ -1,17 +1,12 @@
 # phoneSc
-Python3 tool which scans the phone number using "phonenumbers" lib and [numverify](https://numverify.com) API.
+Phone numbers scanner.
+
+### Requirements
+- phonenumbers
+-- NumVerify API
+--
 
 ### Installation
-**Local Scan**:
-
-- $ ```pip3 install -r requirements.txt```
-
-**numverify** ([Free API](https://numverify.com/signup?plan=17)):
-
-- Open the file "phoneSc.py" using your text editor:
-
-![File](/screenshots/nvinstallation.png)
-
-- Find the "api_key = ' ' " string and type your api key:
-
-![API Variable](/screenshots/nvapi.png)
+- ```$ git clone https://github.com/Qzacy/phoneSc.git```
+- ```$ cd phoneSc```
+- ```$ pip3 install -r requirements.txt```
