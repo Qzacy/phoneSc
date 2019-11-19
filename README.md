@@ -4,7 +4,8 @@ Phone numbers scanner.
 ### Requirements
 Check [Installation](#Installation) to install all of them:
 - phonenumbers
-- requests
+- requests.
+- urllib
 - NumVerify API
 - Veriphone API
 
