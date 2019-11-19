@@ -9,7 +9,9 @@ Check [Installation](#Installation) to install all of them:
 - Veriphone API
 
 ### Installation
-- ```$ git clone https://github.com/Qzacy/phoneSc.git```
+- Clone:
+```$ git clone https://github.com/Qzacy/phoneSc.git```
+- Join dir:
 - ```$ cd phoneSc```
 - ```$ pip3 install -r requirements.txt```
 - ```$ python3 psc.py [+1 (000) 000 0000]``` (Enter the complete prefix)
